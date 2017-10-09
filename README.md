@@ -1,4 +1,7 @@
 # Tests Watcher Starter
+
+![Starter](https://raw.githubusercontent.com/antonioribeiro/ci/master/docs/dashboard.png)
+
 #### A watcher, tester & dashboard for your tests
 
 This is an app starter repository for the [Tests Watcher Package](https://github.com/antonioribeiro/ci)
