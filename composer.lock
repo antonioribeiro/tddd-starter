@@ -1251,16 +1251,16 @@
         },
         {
             "name": "pragmarx/ci",
-            "version": "v0.9.1",
+            "version": "v0.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/ci.git",
-                "reference": "473643c396cf2e4edf61a3e4b08b1c3234fac746"
+                "reference": "51d766bb2a8d9c07f81463fefbc0f21c6dc63ea8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/473643c396cf2e4edf61a3e4b08b1c3234fac746",
-                "reference": "473643c396cf2e4edf61a3e4b08b1c3234fac746",
+                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/51d766bb2a8d9c07f81463fefbc0f21c6dc63ea8",
+                "reference": "51d766bb2a8d9c07f81463fefbc0f21c6dc63ea8",
                 "shasum": ""
             },
             "require": {
@@ -1321,7 +1321,7 @@
                 "testing",
                 "watcher"
             ],
-            "time": "2017-10-08T17:36:58+00:00"
+            "time": "2017-10-09T00:28:07+00:00"
         },
         {
             "name": "pragmarx/support",
