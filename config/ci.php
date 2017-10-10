@@ -23,11 +23,17 @@ return [
     'url_prefix' => '/tests-watcher',
 
     /**
+     * Regex to match file names and li
+     *
+     */
+    'regex_file_matcher' => '/([A-Za-z0-9\/._-]+):([1-9][0-9]*)/',
+
+    /**
      * Projects
      *
      */
     'projects' => [
-        'project foo (PHPUnit)' => [
+        'PHPUnit' => [
             'path' => $basePath,
             'watch_folders' => [
                 'app',
@@ -55,7 +61,7 @@ return [
             ],
         ],
 
-        'project bar (dusk)' => [
+        'Laravel Dusk' => [
             'path' => $basePath,
             'watch_folders' => [
                 'app',
@@ -77,6 +83,100 @@ return [
                 ],
             ],
         ],
+
+        'Jest (Javascript)' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'resources/assets/js/tests'
+            ],
+            'exclude' => [
+                'storage',
+                '.idea',
+            ],
+            'depends' => [],
+            'tests_path' => 'resources/assets/js/tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'jest',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.spec.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'VueJS components (with Jest)' => [
+            'path' => $basePath.'/resources/assets/js/vue-tests',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'jest',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        "React" => [
+            'path' => $basePath.'/resources/assets/js/react-tests',
+            'watch_folders' => [
+                'src',
+            ],
+            'exclude' => [
+            ],
+            'depends' => [],
+            'tests_path' => 'src',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'react-scripts',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'Multiple suites' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'app',
+                'resources/assets/js/tests'
+            ],
+            'exclude' => [
+                'storage',
+                '.idea',
+            ],
+            'depends' => [],
+            'tests_path' => 'tests/Multiple/',
+            'suites' => [
+                'page_module' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Modules/Page/Tests',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+                'core_module' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Modules/Core/Tests',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
     ],
 
     /**
@@ -205,6 +305,19 @@ return [
         'tester' => [
             'command' => 'sh vendor/bin/tester',
         ],
+
+        'jest' => [
+            'command' => 'npm test',
+            'require_script' => true,
+            'output_folder' => "tests/__snapshots__",
+            'output_html_fail_extension' => '.snap',
+        ],
+
+        'react-scripts' => [
+            'env' => 'CI=true',
+            'command' => 'npm test',
+            'require_script' => true,
+        ]
 
     ],
 
