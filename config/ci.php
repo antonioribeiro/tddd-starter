@@ -33,149 +33,195 @@ return [
      *
      */
     'projects' => [
-        'PHPUnit' => [
-            'path' => $basePath,
+//        'PHPUnit' => [
+//            'path' => $basePath,
+//            'watch_folders' => [
+//                'app',
+//                'tests'
+//            ],
+//            'exclude' => [],
+//            'depends' => [],
+//            'tests_path' => 'tests',
+//            'suites' => [
+//                'feature' => [
+//                    'tester' => 'phpunit',
+//                    'tests_path' => 'Feature',
+//                    'command_options' => '',
+//                    'file_mask' => '*Test.php',
+//                    'retries' => 0,
+//                ],
+//
+//                'unit' => [
+//                    'tester' => 'phpunit',
+//                    'tests_path' => 'Unit',
+//                    'command_options' => '',
+//                    'file_mask' => '*Test.php',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+//
+//        'Laravel Dusk' => [
+//            'path' => $basePath,
+//            'watch_folders' => [
+//                'app',
+//                'tests/Browser'
+//            ],
+//            'exclude' => [
+//                'tests/Browser/console/',
+//                'tests/Browser/screenshots/',
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'tests',
+//            'suites' => [
+//                'browser' => [
+//                    'tester' => 'dusk',
+//                    'tests_path' => 'Browser',
+//                    'command_options' => '',
+//                    'file_mask' => '*Test.php',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+//
+//        'Vanilla Javascript (Jest)' => [
+//            'path' => $basePath,
+//            'watch_folders' => [
+//                'examples/javascript'
+//            ],
+//            'exclude' => [
+//                'storage',
+//                '.idea',
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'examples/javascript/tests',
+//            'suites' => [
+//                'unit' => [
+//                    'tester' => 'jest',
+//                    'tests_path' => '',
+//                    'command_options' => '',
+//                    'file_mask' => '*.spec.js',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+//
+//        'VueJS (Jest)' => [
+//            'path' => $basePath.'/examples/vue-jest',
+//            'watch_folders' => [
+//                'src',
+//                'tests'
+//            ],
+//            'exclude' => [
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'tests',
+//            'suites' => [
+//                'unit' => [
+//                    'tester' => 'jest',
+//                    'tests_path' => '',
+//                    'command_options' => '',
+//                    'file_mask' => '*.test.js',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+//
+//        'VueJS (vue-test-utils)' => [
+//            'path' => $basePath.'/examples/vue-test-utils',
+//            'watch_folders' => [
+//                'components',
+//            ],
+//            'exclude' => [
+//                'node_modules'
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'components',
+//            'suites' => [
+//                'unit' => [
+//                    'tester' => 'jest',
+//                    'tests_path' => '',
+//                    'command_options' => '',
+//                    'file_mask' => '*.test.js',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+//
+//        "React" => [
+//            'path' => $basePath.'/examples/react',
+//            'watch_folders' => [
+//                'src',
+//            ],
+//            'exclude' => [
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'src',
+//            'suites' => [
+//                'unit' => [
+//                    'tester' => 'react-scripts',
+//                    'tests_path' => '',
+//                    'command_options' => '',
+//                    'file_mask' => '*.test.js',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
+
+        "Ruby on Rails" => [
+            'path' => $basePath.'/examples/ruby-on-rails',
             'watch_folders' => [
                 'app',
-                'tests'
-            ],
-            'exclude' => [],
-            'depends' => [],
-            'tests_path' => 'tests',
-            'suites' => [
-                'feature' => [
-                    'tester' => 'phpunit',
-                    'tests_path' => 'Feature',
-                    'command_options' => '',
-                    'file_mask' => '*Test.php',
-                    'retries' => 0,
-                ],
-
-                'unit' => [
-                    'tester' => 'phpunit',
-                    'tests_path' => 'Unit',
-                    'command_options' => '',
-                    'file_mask' => '*Test.php',
-                    'retries' => 0,
-                ],
-            ],
-        ],
-
-        'Laravel Dusk' => [
-            'path' => $basePath,
-            'watch_folders' => [
-                'app',
-                'tests/Browser'
+                'config',
+                'db',
+                'lib',
+                'test',
             ],
             'exclude' => [
-                'tests/Browser/console/',
-                'tests/Browser/screenshots/',
             ],
             'depends' => [],
-            'tests_path' => 'tests',
-            'suites' => [
-                'browser' => [
-                    'tester' => 'dusk',
-                    'tests_path' => 'Browser',
-                    'command_options' => '',
-                    'file_mask' => '*Test.php',
-                    'retries' => 0,
-                ],
-            ],
-        ],
-
-        'Jest (Javascript)' => [
-            'path' => $basePath,
-            'watch_folders' => [
-                'resources/assets/js/tests'
-            ],
-            'exclude' => [
-                'storage',
-                '.idea',
-            ],
-            'depends' => [],
-            'tests_path' => 'resources/assets/js/tests',
+            'tests_path' => 'test',
             'suites' => [
                 'unit' => [
-                    'tester' => 'jest',
+                    'tester' => 'rake',
                     'tests_path' => '',
                     'command_options' => '',
-                    'file_mask' => '*.spec.js',
+                    'file_mask' => '*_test.rb',
                     'retries' => 0,
+                    'editor' => 'phpstorm',
                 ],
             ],
         ],
 
-        'VueJS components (with Jest)' => [
-            'path' => $basePath.'/resources/assets/js/vue-tests',
-            'watch_folders' => [
-                'src',
-                'tests'
-            ],
-            'exclude' => [
-            ],
-            'depends' => [],
-            'tests_path' => 'tests',
-            'suites' => [
-                'unit' => [
-                    'tester' => 'jest',
-                    'tests_path' => '',
-                    'command_options' => '',
-                    'file_mask' => '*.test.js',
-                    'retries' => 0,
-                ],
-            ],
-        ],
-
-        "React" => [
-            'path' => $basePath.'/resources/assets/js/react-tests',
-            'watch_folders' => [
-                'src',
-            ],
-            'exclude' => [
-            ],
-            'depends' => [],
-            'tests_path' => 'src',
-            'suites' => [
-                'unit' => [
-                    'tester' => 'react-scripts',
-                    'tests_path' => '',
-                    'command_options' => '',
-                    'file_mask' => '*.test.js',
-                    'retries' => 0,
-                ],
-            ],
-        ],
-
-        'Multiple suites' => [
-            'path' => $basePath,
-            'watch_folders' => [
-                'app',
-                'resources/assets/js/tests'
-            ],
-            'exclude' => [
-                'storage',
-                '.idea',
-            ],
-            'depends' => [],
-            'tests_path' => 'tests/Multiple/',
-            'suites' => [
-                'page_module' => [
-                    'tester' => 'phpunit',
-                    'tests_path' => 'Modules/Page/Tests',
-                    'command_options' => '',
-                    'file_mask' => '*Test.php',
-                    'retries' => 0,
-                ],
-                'core_module' => [
-                    'tester' => 'phpunit',
-                    'tests_path' => 'Modules/Core/Tests',
-                    'command_options' => '',
-                    'file_mask' => '*Test.php',
-                    'retries' => 0,
-                ],
-            ],
-        ],
+//        'Multiple suites' => [
+//            'path' => $basePath,
+//            'watch_folders' => [
+//                'app',
+//                'resources/assets/js/tests'
+//            ],
+//            'exclude' => [
+//                'storage',
+//                '.idea',
+//            ],
+//            'depends' => [],
+//            'tests_path' => 'tests/Multiple/',
+//            'suites' => [
+//                'page_module' => [
+//                    'tester' => 'phpunit',
+//                    'tests_path' => 'Modules/Page/Tests',
+//                    'command_options' => '',
+//                    'file_mask' => '*Test.php',
+//                    'retries' => 0,
+//                ],
+//                'core_module' => [
+//                    'tester' => 'phpunit',
+//                    'tests_path' => 'Modules/Core/Tests',
+//                    'command_options' => '',
+//                    'file_mask' => '*Test.php',
+//                    'retries' => 0,
+//                ],
+//            ],
+//        ],
 
     ],
 
@@ -235,13 +281,23 @@ return [
     ],
 
     /**
-     * Editor
+     * Editors
      *
      */
-    'editor' => [
-        'type' => 'PHPStorm',
+    'editors' => [
+        'phpstorm' => [
+            'type' => 'PHPStorm',
 
-        'bin' => '/usr/local/bin/pstorm'
+            'bin' => '/usr/local/bin/pstorm',
+
+            'default' => true,
+        ],
+
+        'sublime' => [
+            'type' => 'SublimeText 3',
+
+            'bin' => '/usr/local/bin/subl',
+        ],
     ],
 
     /**
@@ -317,7 +373,14 @@ return [
             'env' => 'CI=true',
             'command' => 'npm test',
             'require_script' => true,
-        ]
+            'error_pattern' => 'Test\s+Suites:\s+[0-9]+\s+failed', // regex, only for tee results
+        ],
+
+        'rake' => [
+            'command' => 'bin/rails test',
+            'require_script' => true,
+            'error_pattern' => 'Test\s+Suites:\s+[0-9]+\s+failed', // regex, only for tee results
+        ],
 
     ],
 

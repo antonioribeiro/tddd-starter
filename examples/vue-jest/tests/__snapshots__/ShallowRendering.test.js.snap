@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.counter.test.js has the expected html structure 1`] = `
+<div
+  id="app"
+>
+  <img
+    src="./assets/logo.png"
+  />
+   
+  <!---->
+</div>
+`;
