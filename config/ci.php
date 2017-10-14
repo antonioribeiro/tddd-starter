@@ -26,147 +26,179 @@ return [
      * Regex to match file names and li
      *
      */
-    'regex_file_matcher' => '/([A-Za-z0-9\/._-]+):([1-9][0-9]*)/',
+    'regex_file_matcher' => '/([A-Za-z0-9\/._-]+)(?::| on line )([1-9][0-9]*)/',
+
+    /**
+     * Regex to match file names and li
+     *
+     */
+    'poll_interval' => 300, // ms
 
     /**
      * Projects
      *
      */
     'projects' => [
-//        'PHPUnit' => [
-//            'path' => $basePath,
-//            'watch_folders' => [
-//                'app',
-//                'tests'
-//            ],
-//            'exclude' => [],
-//            'depends' => [],
-//            'tests_path' => 'tests',
-//            'suites' => [
-//                'feature' => [
-//                    'tester' => 'phpunit',
-//                    'tests_path' => 'Feature',
-//                    'command_options' => '',
-//                    'file_mask' => '*Test.php',
-//                    'retries' => 0,
-//                ],
-//
-//                'unit' => [
-//                    'tester' => 'phpunit',
-//                    'tests_path' => 'Unit',
-//                    'command_options' => '',
-//                    'file_mask' => '*Test.php',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
-//
-//        'Laravel Dusk' => [
-//            'path' => $basePath,
-//            'watch_folders' => [
-//                'app',
-//                'tests/Browser'
-//            ],
-//            'exclude' => [
-//                'tests/Browser/console/',
-//                'tests/Browser/screenshots/',
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'tests',
-//            'suites' => [
-//                'browser' => [
-//                    'tester' => 'dusk',
-//                    'tests_path' => 'Browser',
-//                    'command_options' => '',
-//                    'file_mask' => '*Test.php',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
-//
-//        'Vanilla Javascript (Jest)' => [
-//            'path' => $basePath,
-//            'watch_folders' => [
-//                'examples/javascript'
-//            ],
-//            'exclude' => [
-//                'storage',
-//                '.idea',
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'examples/javascript/tests',
-//            'suites' => [
-//                'unit' => [
-//                    'tester' => 'jest',
-//                    'tests_path' => '',
-//                    'command_options' => '',
-//                    'file_mask' => '*.spec.js',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
-//
-//        'VueJS (Jest)' => [
-//            'path' => $basePath.'/examples/vue-jest',
-//            'watch_folders' => [
-//                'src',
-//                'tests'
-//            ],
-//            'exclude' => [
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'tests',
-//            'suites' => [
-//                'unit' => [
-//                    'tester' => 'jest',
-//                    'tests_path' => '',
-//                    'command_options' => '',
-//                    'file_mask' => '*.test.js',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
-//
-//        'VueJS (vue-test-utils)' => [
-//            'path' => $basePath.'/examples/vue-test-utils',
-//            'watch_folders' => [
-//                'components',
-//            ],
-//            'exclude' => [
-//                'node_modules'
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'components',
-//            'suites' => [
-//                'unit' => [
-//                    'tester' => 'jest',
-//                    'tests_path' => '',
-//                    'command_options' => '',
-//                    'file_mask' => '*.test.js',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
-//
-//        "React" => [
-//            'path' => $basePath.'/examples/react',
-//            'watch_folders' => [
-//                'src',
-//            ],
-//            'exclude' => [
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'src',
-//            'suites' => [
-//                'unit' => [
-//                    'tester' => 'react-scripts',
-//                    'tests_path' => '',
-//                    'command_options' => '',
-//                    'file_mask' => '*.test.js',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
+        'PHPUnit' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'app',
+                'tests'
+            ],
+            'exclude' => [],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'feature' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Feature',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+
+                'unit' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Unit',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'Laravel Dusk' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'app',
+                'resources',
+                'config',
+                'routes',
+                'tests/Browser'
+            ],
+            'exclude' => [
+                'tests/Browser/console',
+                'tests/Browser/screenshots',
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'browser' => [
+                    'tester' => 'dusk',
+                    'tests_path' => 'Browser',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'Vanilla Javascript (Jest)' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'examples/javascript'
+            ],
+            'exclude' => [
+                'storage',
+                '.idea',
+            ],
+            'depends' => [],
+            'tests_path' => 'examples/javascript/tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'jest',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.spec.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'VueJS (Jest)' => [
+            'path' => $basePath.'/examples/vue-jest',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+                'tests/__snapshots__',
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'jest',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'VueJS (vue-test-utils)' => [
+            'path' => $basePath.'/examples/vue-test-utils',
+            'watch_folders' => [
+                'components',
+            ],
+            'exclude' => [
+                'node_modules'
+            ],
+            'depends' => [],
+            'tests_path' => 'components',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'jest',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'VueJS (AVA)' => [
+            'path' => $basePath.'/examples/vue-ava',
+            'watch_folders' => [
+                'src',
+                'test',
+            ],
+            'exclude' => [
+                'node_modules'
+            ],
+            'depends' => [],
+            'tests_path' => 'test',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'ava',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        "React" => [
+            'path' => $basePath.'/examples/react',
+            'watch_folders' => [
+                'src',
+            ],
+            'exclude' => [
+            ],
+            'depends' => [],
+            'tests_path' => 'src',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'react-scripts',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*.test.js',
+                    'retries' => 0,
+                ],
+            ],
+        ],
 
         "Ruby on Rails" => [
             'path' => $basePath.'/examples/ruby-on-rails',
@@ -188,40 +220,40 @@ return [
                     'command_options' => '',
                     'file_mask' => '*_test.rb',
                     'retries' => 0,
-                    'editor' => 'phpstorm',
+                    'editor' => 'vscode',
                 ],
             ],
         ],
 
-//        'Multiple suites' => [
-//            'path' => $basePath,
-//            'watch_folders' => [
-//                'app',
-//                'resources/assets/js/tests'
-//            ],
-//            'exclude' => [
-//                'storage',
-//                '.idea',
-//            ],
-//            'depends' => [],
-//            'tests_path' => 'tests/Multiple/',
-//            'suites' => [
-//                'page_module' => [
-//                    'tester' => 'phpunit',
-//                    'tests_path' => 'Modules/Page/Tests',
-//                    'command_options' => '',
-//                    'file_mask' => '*Test.php',
-//                    'retries' => 0,
-//                ],
-//                'core_module' => [
-//                    'tester' => 'phpunit',
-//                    'tests_path' => 'Modules/Core/Tests',
-//                    'command_options' => '',
-//                    'file_mask' => '*Test.php',
-//                    'retries' => 0,
-//                ],
-//            ],
-//        ],
+        'Multiple suites' => [
+            'path' => $basePath,
+            'watch_folders' => [
+                'app',
+                'resources/assets/js/tests'
+            ],
+            'exclude' => [
+                'storage',
+                '.idea',
+            ],
+            'depends' => [],
+            'tests_path' => 'tests/Multiple/',
+            'suites' => [
+                'page_module' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Modules/Page/Tests',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+                'core_module' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => 'Modules/Core/Tests',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
 
     ],
 
@@ -230,13 +262,9 @@ return [
      *
      */
     'notifications' => [
-        'enabled' => true,
-
         'notify_on' => [
-            'panel' => false,
-            'check' => true,
-            'string' => true,
-            'resource' => false,
+            'fail' => true,
+            'pass' => false, // not implemented
         ],
 
         'routes' => [
@@ -258,22 +286,22 @@ return [
         ],
 
         'users' => [
-            'model' => PragmaRX\TestsWatcher\Vendor\Laravel\Entities\User::class, // App\User::class,
+            'model' => PragmaRX\TestsWatcher\Package\Data\Models\User::class, // App\User::class,
 
             'emails' => [
-                'laravel-ci@mydomain.com'
+                'laravel-ci@mydomain.com',
             ],
         ],
 
         'channels' => [
             'mail' => [
                 'enabled' => false,
-                'sender' => PragmaRX\TestsWatcher\Notifications\Channels\Mail::class,
+                'sender'  => PragmaRX\TestsWatcher\Package\Notifications\Channels\Mail::class,
             ],
 
             'slack' => [
                 'enabled' => true,
-                'sender' => PragmaRX\TestsWatcher\Notifications\Channels\Slack::class,
+                'sender'  => PragmaRX\TestsWatcher\Package\Notifications\Channels\Slack::class,
             ],
         ],
 
@@ -286,17 +314,23 @@ return [
      */
     'editors' => [
         'phpstorm' => [
-            'type' => 'PHPStorm',
+            'name' => 'PHPStorm',
 
-            'bin' => '/usr/local/bin/pstorm',
+            'bin' => '/usr/local/bin/pstorm {file}:{line}',
 
             'default' => true,
         ],
 
         'sublime' => [
-            'type' => 'SublimeText 3',
+            'name' => 'SublimeText 3',
 
-            'bin' => '/usr/local/bin/subl',
+            'bin' => '/usr/local/bin/subl {file}:{line}',
+        ],
+
+        'vscode' => [
+            'name' => 'VSCode',
+
+            'bin' => '/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin/code --goto {file}:{line}',
         ],
     ],
 
@@ -380,6 +414,12 @@ return [
             'command' => 'bin/rails test',
             'require_script' => true,
             'error_pattern' => 'Test\s+Suites:\s+[0-9]+\s+failed', // regex, only for tee results
+        ],
+
+        'ava' => [
+            'command' => 'node_modules/.bin/ava --verbose',
+            'require_script' => true,
+            'error_pattern' => '[1-9]+\s+(exception|failure)', // regex, only for tee results
         ],
 
     ],

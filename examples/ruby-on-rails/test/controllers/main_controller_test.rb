@@ -1,4 +1,10 @@
+#
+#
+# This is a test example
+#
+
 def test_the_truth
-  article = Article.new
-  assert_not article.save
+  assert true
 end
+
+#shouldFail in line 10

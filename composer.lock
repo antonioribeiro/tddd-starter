@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5af0884fb1b3f4dacceb857284d707e0",
+    "content-hash": "b523027498ac0c9321dfc2811220539e",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1333,7 +1333,7 @@
                 "component": "package",
                 "laravel": {
                     "providers": [
-                        "PragmaRX\\TestsWatcher\\Vendor\\Laravel\\ServiceProvider"
+                        "PragmaRX\\TestsWatcher\\ServiceProvider"
                     ]
                 }
             },
@@ -1343,7 +1343,7 @@
                     "PragmaRX\\TestsWatcher\\Tests\\": "tests/"
                 },
                 "psr-0": {
-                    "JasonLewis\\ResourceWatcher": "src/Support/jasonlewis/resource-watcher/src"
+                    "JasonLewis\\ResourceWatcher": "src/package/Support/jasonlewis/resource-watcher/src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1376,6 +1376,75 @@
                 "watcher"
             ],
             "time": "2017-10-10T04:55:33+00:00"
+        },
+        {
+            "name": "pragmarx/firewall",
+            "version": "v2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/firewall.git",
+                "reference": "a9caba31a5e35a86111b1fbb2945e3439f13f0ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/firewall/zipball/a9caba31a5e35a86111b1fbb2945e3439f13f0ed",
+                "reference": "a9caba31a5e35a86111b1fbb2945e3439f13f0ed",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.3",
+                "php": ">=5.6",
+                "pragmarx/support": "~0.8.0"
+            },
+            "require-dev": {
+                "geoip2/geoip2": "~2.0",
+                "guzzlehttp/guzzle": "^6.2",
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "~5.7"
+            },
+            "suggest": {
+                "geoip/geoip": "~1.14",
+                "geoip2/geoip2": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.5.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "PragmaRX\\Firewall\\Vendor\\Laravel\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Firewall": "PragmaRX\\Firewall\\Vendor\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PragmaRX\\Firewall\\": "src/",
+                    "PragmaRX\\Firewall\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Carlos Ribeiro",
+                    "email": "acr@antoniocarlosribeiro.com",
+                    "role": "Creator"
+                }
+            ],
+            "description": "A Laravel IP whitelisting and blacklisting",
+            "keywords": [
+                "blacklist",
+                "firewall",
+                "laravel",
+                "whitelist"
+            ],
+            "time": "2017-09-06T02:46:12+00:00"
         },
         {
             "name": "pragmarx/support",
@@ -1627,16 +1696,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.8.11",
+            "version": "v0.8.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "b193cd020e8c6b66cea6457826ae005e94e6d2c0"
+                "reference": "1502354ebc70d59d8e3a87c325b0eb78a79da25b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/b193cd020e8c6b66cea6457826ae005e94e6d2c0",
-                "reference": "b193cd020e8c6b66cea6457826ae005e94e6d2c0",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/1502354ebc70d59d8e3a87c325b0eb78a79da25b",
+                "reference": "1502354ebc70d59d8e3a87c325b0eb78a79da25b",
                 "shasum": ""
             },
             "require": {
@@ -1696,7 +1765,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2017-07-29T19:30:02+00:00"
+            "time": "2017-10-14T17:14:13+00:00"
         },
         {
             "name": "ramsey/uuid",
