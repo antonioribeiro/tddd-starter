@@ -77,7 +77,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Tests Watcher
+                    RED!
                 </div>
 
                 <div class="links">

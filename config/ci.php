@@ -23,6 +23,12 @@ return [
     'url_prefix' => '/tests-watcher',
 
     /**
+     * Config file.
+     */
+
+    'config_file' => config_path('ci.php'),
+
+    /**
      * Regex to match file names and li
      *
      */
@@ -45,7 +51,8 @@ return [
                 'app',
                 'tests'
             ],
-            'exclude' => [],
+            'exclude' => [
+            ],
             'depends' => [],
             'tests_path' => 'tests',
             'suites' => [
@@ -133,6 +140,7 @@ return [
                     'command_options' => '',
                     'file_mask' => '*.test.js',
                     'retries' => 0,
+                    'editor' => 'vscode',
                 ],
             ],
         ],
@@ -154,6 +162,7 @@ return [
                     'command_options' => '',
                     'file_mask' => '*.test.js',
                     'retries' => 0,
+                    'editor' => 'vscode',
                 ],
             ],
         ],
@@ -176,6 +185,7 @@ return [
                     'command_options' => '',
                     'file_mask' => '*.test.js',
                     'retries' => 0,
+                    'editor' => 'vscode',
                 ],
             ],
         ],
@@ -255,6 +265,29 @@ return [
             ],
         ],
 
+        'Firewall (PragmRX)' => [
+            'path' => $basePath.'/vendor/pragmarx/firewall',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+                'tests/database.sqlite',
+                'tests/geoipdb',
+                'tests/files',
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
     ],
 
     /**

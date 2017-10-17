@@ -1333,7 +1333,7 @@
                 "component": "package",
                 "laravel": {
                     "providers": [
-                        "PragmaRX\\TestsWatcher\\ServiceProvider"
+                        "PragmaRX\\TestsWatcher\\Package\\ServiceProvider"
                     ]
                 }
             },

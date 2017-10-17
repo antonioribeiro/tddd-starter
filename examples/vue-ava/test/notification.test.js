@@ -8,19 +8,15 @@ test.beforeEach(t => {
     let N = Vue.extend(Notification);
 
     vm = new N({ propsData: {
-        message: 'Foobar'
+        message: 'Foobar baz'
     }}).$mount();
 });
 
 
 test('that it renders a notification', t => {
-    t.is(vm.$el.textContent, 'FOOBAR');
+    t.is(vm.$el.textContent, 'FOOBAR BAZ');
 });
 
-test('that it renders a notification', t => {
-    t.is(vm.$el.textContent, 'FOOBAR');
-});
-
-test('that it renders a notification', t => {
-    t.is(vm.$el.textContent, 'FOOBAR');
+test('that it renders something else', t => {
+    t.is(vm.$el.textContent, 'FOOBAR BAZ');
 });
