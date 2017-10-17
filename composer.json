@@ -10,7 +10,7 @@
         "laravel/dusk": "^2.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "pragmarx/ci": "dev-master#64a569929a392bddd946cc844f6813e0eee1f8fc",
+        "pragmarx/ci": "dev-master#91946c6ede397cf72b7312c1c385475227600a23",
         "pragmarx/firewall": "~2.0"
     },
     "require-dev": {
