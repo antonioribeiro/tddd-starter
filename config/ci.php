@@ -239,7 +239,6 @@ return [
             'path' => $basePath,
             'watch_folders' => [
                 'app',
-                'resources/assets/js/tests'
             ],
             'exclude' => [
                 'storage',
@@ -281,6 +280,27 @@ return [
             'suites' => [
                 'unit' => [
                     'tester' => 'phpunit',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'Symfony (4.0-BETA) Flex' => [
+            'path' => $basePath.'/examples/symfony4/vendor/symfony/flex',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'simple-phpunit',
                     'tests_path' => '',
                     'command_options' => '',
                     'file_mask' => '*Test.php',
@@ -393,6 +413,11 @@ return [
 
         'phpunit' => [
             'command' => 'vendor/bin/phpunit',
+            'require_script' => true,
+        ],
+
+        'simple-phpunit' => [
+            'command' => 'vendor/bin/simple-phpunit',
             'require_script' => true,
         ],
 
