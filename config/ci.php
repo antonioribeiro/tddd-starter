@@ -288,7 +288,7 @@ return [
             ],
         ],
 
-        'Symfony (4.0-BETA) Flex' => [
+        'Symfony Flex 4.0-beta' => [
             'path' => $basePath.'/examples/symfony4/vendor/symfony/flex',
             'watch_folders' => [
                 'src',
@@ -308,6 +308,49 @@ return [
                 ],
             ],
         ],
+
+        'PragmaRX Countries' => [
+            'path' => '/Users/antoniocarlos/code/pragmarx/pragmarx.com/vendor/pragmarx/countries',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
+
+        'PragmaRX Coollection' => [
+            'path' => $coollection = '/Users/antoniocarlos/code/pragmarx/pragmarx.com/vendor/pragmarx/coollection',
+            'watch_folders' => [
+                'src',
+                'tests'
+            ],
+            'exclude' => [
+                "src/package/Support/Tightenco"
+            ],
+            'depends' => [],
+            'tests_path' => 'tests',
+            'suites' => [
+                'unit' => [
+                    'tester' => 'phpunit',
+                    'tests_path' => '',
+                    'command_options' => '',
+                    'file_mask' => '*Test.php',
+                    'retries' => 0,
+                ],
+            ],
+        ],
     ],
 
     /**
@@ -316,7 +359,7 @@ return [
      */
     'notifications' => [
         'notify_on' => [
-            'fail' => true,
+            'fail' => false,
             'pass' => false, // not implemented
         ],
 
