@@ -1,0 +1,12 @@
+.git
+.idea
+app
+bootstrap
+config
+database
+node_modules
+public
+resources
+storage
+tests
+vendor

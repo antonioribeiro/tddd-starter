@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0387697ea9e87137cb0eb8d0e1d617dd",
+    "content-hash": "6b93677adcfa43c297fa4efdc9ba5143",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -1462,7 +1462,7 @@
         },
         {
             "name": "mtdowling/cron-expression",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mtdowling/cron-expression.git",
@@ -1658,30 +1658,32 @@
         },
         {
             "name": "pragmarx/ci",
-            "version": "dev-master",
+            "version": "dev-docker",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/ci.git",
-                "reference": "91946c6ede397cf72b7312c1c385475227600a23"
+                "reference": "ad9b31b155cb9797fe1bdf0fd5de64dcc5f879f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/91946c6ede397cf72b7312c1c385475227600a23",
-                "reference": "91946c6ede397cf72b7312c1c385475227600a23",
+                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/ad9b31b155cb9797fe1bdf0fd5de64dcc5f879f8",
+                "reference": "ad9b31b155cb9797fe1bdf0fd5de64dcc5f879f8",
                 "shasum": ""
             },
             "require": {
+                "doctrine/dbal": "~2.6",
                 "guzzlehttp/guzzle": "~6.3",
                 "jolicode/jolinotif": "~1.2",
                 "laravel/framework": ">=5.5",
                 "php": ">=7.0",
                 "pragmarx/support": "~0.8",
                 "sensiolabs/ansi-to-html": "~1",
-                "symfony/process": "~3"
+                "symfony/process": "~3",
+                "symfony/yaml": "~3.2"
             },
             "require-dev": {
                 "orchestra/testbench": "~3.5",
-                "phpunit/phpunit": "~6"
+                "phpunit/phpunit": ">=5.7"
             },
             "type": "library",
             "extra": {
@@ -1699,7 +1701,10 @@
                 },
                 "psr-0": {
                     "JasonLewis\\ResourceWatcher": "src/package/Support/jasonlewis/resource-watcher/src"
-                }
+                },
+                "files": [
+                    "src/package/Support/helpers.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1712,7 +1717,7 @@
                     "role": "Creator & Designer"
                 }
             ],
-            "description": "A Tests Watcher Service & Dashboard Package",
+            "description": "A Test Driven Development Dashboard & Watcher Package",
             "keywords": [
                 "BDD",
                 "Behat",
@@ -1730,7 +1735,7 @@
                 "testing",
                 "watcher"
             ],
-            "time": "2017-10-17T21:20:40+00:00"
+            "time": "2017-11-02T19:28:07+00:00"
         },
         {
             "name": "pragmarx/firewall",
@@ -1800,6 +1805,75 @@
                 "whitelist"
             ],
             "time": "2017-09-06T02:46:12+00:00"
+        },
+        {
+            "name": "pragmarx/health",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/health.git",
+                "reference": "15dc15119b482cedb0b23250a553972d703ad7fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/health/zipball/15dc15119b482cedb0b23250a553972d703ad7fb",
+                "reference": "15dc15119b482cedb0b23250a553972d703ad7fb",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.3",
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "docusign/esign-client": "^2.0",
+                "guzzlehttp/guzzle": "~6.0",
+                "laravel/laravel": "^5.3",
+                "orchestra/testbench": "~3.0",
+                "phpunit/phpunit": "~5.7",
+                "predis/predis": "^1.0",
+                "symfony/yaml": "~3.2"
+            },
+            "suggest": {
+                "docusign/esign-client": "^2.0",
+                "guzzlehttp/guzzle": "~6.0",
+                "league/flysystem-aws-s3-v3": "^1.0",
+                "predis/predis": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/Support/Throwable.php",
+                    "src/Support/helpers.php"
+                ],
+                "psr-4": {
+                    "PragmaRX\\Health\\": "src/",
+                    "PragmaRX\\Health\\tests\\phpunit\\": "tests/phpunit/",
+                    "PragmaRX\\Health\\Tests\\PhpUnit\\": "tests/PhpUnit/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Carlos Ribeiro",
+                    "email": "acr@antoniocarlosribeiro.com",
+                    "role": "Creator & Designer"
+                }
+            ],
+            "description": "Laravel Server & App Health Monitor and Notifier",
+            "keywords": [
+                "app",
+                "health",
+                "laravel",
+                "monitor",
+                "notifications",
+                "panel",
+                "pragmarx",
+                "server"
+            ],
+            "time": "2017-04-21T02:46:36+00:00"
         },
         {
             "name": "pragmarx/support",
@@ -3049,6 +3123,61 @@
                 "dump"
             ],
             "time": "2017-10-02T06:42:24+00:00"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46",
+                "reference": "8c7bf1e7d5d6b05a690b715729cb4cd0c0a99c46",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "require-dev": {
+                "symfony/console": "~2.8|~3.0"
+            },
+            "suggest": {
+                "symfony/console": "For validating YAML files using the lint command"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "https://symfony.com",
+            "time": "2017-10-05T14:43:42+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",

@@ -1,0 +1,9 @@
+web:
+  build: docker
+  #image: continous-testing-dashboard
+  volumes:
+   - '.:/continous-testing-dashboard'
+  ports:
+   - "8087:8087"
+  command: bash startapp.sh
+  #command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
