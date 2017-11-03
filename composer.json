@@ -6,15 +6,12 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "doctrine/dbal": "^2.6",
         "fideloper/proxy": "~3.3",
         "laravel/dusk": "^2.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
         "pragmarx/ci": "dev-docker",
-        "pragmarx/firewall": "~2.0",
-        "pragmarx/health": "^0.3.3",
-        "symfony/yaml": "~3.2"
+        "pragmarx/firewall": "~2.0"
     },
     "require-dev": {
         "filp/whoops": "~2.0",
