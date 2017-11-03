@@ -9,7 +9,7 @@ return [
      *
      */
     'names' => [
-        'dashboard' => $name = 'Laravel Tests-Watcher',
+        'dashboard' => $name = 'Test Driven Development Dashboard',
 
         'watcher' => $name.' - Watcher',
 
@@ -17,10 +17,30 @@ return [
     ],
 
     /**
+     * Config files and directories
+     *
+     */
+    'config' => [
+        'main' => config_path('ci/main.yml'),
+
+        'projects' => config_path('ci/projects'),
+    ],
+
+    /**
      * Route URI prefix
      *
      */
-    'url_prefix' => '/tests-watcher',
+    'url_prefixes' => [
+        'global' => '',
+
+        'dashboard' => '',
+
+        'tests' => '/tests',
+
+        'projects' => '/projects',
+
+        'files' => '/files'
+    ],
 
     /**
      * Config file.
