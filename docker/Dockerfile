@@ -2,14 +2,14 @@
  # aliases and commands
  #
 # alias d=docker
-# d build -t continous-testing-dashboard docker
-# d run -i -t --rm continous-testing-dashboard
-# d run --name ctd11 -d -p 8087:8087 continous-testing-dashboard
+# d build -t tddd docker
+# d run -i -t --rm tddd
+# d run --name ctd11 -d -p 8087:8087 tddd
 # d exec -i -t bcf785a473df04ab403e2ed57ae35244ac08c9f079438e1e685fa0c3d6547ca3 /bin/bash
-# alias dbash='d exec -i -t $(d ps | grep "continous-testing-dashboard" | cut -f 1 -d" ") /bin/bash'
-# alias dkill='d kill $(d ps | grep "continous-testing-dashboard" | cut -f 1 -d" ") /bin/bash'
+# alias dbash='d exec -i -t $(d ps | grep "tddd" | cut -f 1 -d" ") /bin/bash'
+# alias dkill='d kill $(d ps | grep "tddd" | cut -f 1 -d" ") /bin/bash'
 # d attach <id>
-# d run -v $(pwd):/continous-testing-dashboard --name ctd15 -d -p 8087:8087 continous-testing-dashboard
+# d run -v $(pwd):/tddd --name ctd15 -d -p 8087:8087 tddd
 
 ##
  # image
@@ -24,7 +24,7 @@ LABEL maintainer="Antonio Carlos Ribeiro <acr@antoniocarlosribeiro.com>"
 ##
  # variables and defaults
  #
-ARG dir=/continous-testing-dashboard
+ARG dir=/tddd
 ARG mysql_database="ci"
 ARG mysql_username="ci"
 ARG mysql_password="passw0rt"
@@ -130,5 +130,3 @@ ENTRYPOINT ["/start.sh"]
  # exposed ports
  #
 EXPOSE 8087
-
-
