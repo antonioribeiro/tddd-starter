@@ -1,5 +1,5 @@
 name: "VueJS (AVA)"
-path: "/Users/antoniocarlos/code/pragmarx/ci/examples/vue-ava"
+path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/vue-ava"
 watch_folders:
   - src
   - test

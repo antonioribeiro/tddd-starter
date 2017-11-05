@@ -1,5 +1,5 @@
 name: "React"
-path: "/Users/antoniocarlos/code/pragmarx/ci/examples/react"
+path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/react"
 watch_folders:
   - src
 exclude: []

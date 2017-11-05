@@ -1,5 +1,5 @@
 name: "Firewall (PragmRX)"
-path: "/Users/antoniocarlos/code/pragmarx/ci/vendor/pragmarx/firewall"
+path: "/Users/antoniocarlos/code/pragmarx/tddd/vendor/pragmarx/firewall"
 watch_folders:
   - src
   - tests

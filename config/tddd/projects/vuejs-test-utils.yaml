@@ -1,5 +1,5 @@
 name: "VueJS (vue-test-utils)"
-path: "/Users/antoniocarlos/code/pragmarx/ci/examples/vue-test-utils"
+path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/vue-test-utils"
 watch_folders:
   - components
 exclude:

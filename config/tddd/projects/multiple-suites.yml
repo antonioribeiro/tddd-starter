@@ -1,5 +1,5 @@
 name: "Multiple suites"
-path: "/Users/antoniocarlos/code/pragmarx/ci"
+path: "/Users/antoniocarlos/code/pragmarx/tddd"
 watch_folders:
   - app
 exclude:

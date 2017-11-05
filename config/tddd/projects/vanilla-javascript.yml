@@ -1,5 +1,5 @@
 name: "Vanilla Javascript (Jest)"
-path: "/Users/antoniocarlos/code/pragmarx/ci"
+path: "/Users/antoniocarlos/code/pragmarx/tddd"
 watch_folders:
   - examples/javascript
 exclude:

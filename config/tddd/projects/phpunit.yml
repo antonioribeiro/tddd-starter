@@ -1,5 +1,5 @@
 name: "PHPUnit"
-path: "/Users/antoniocarlos/code/pragmarx/ci"
+path: "/Users/antoniocarlos/code/pragmarx/tddd"
 watch_folders:
   - app
   - tests
