@@ -1,5 +1,5 @@
 name: "Firewall (PragmRX)"
-path: "/Users/antoniocarlos/code/pragmarx/tddd/vendor/pragmarx/firewall"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/vendor/pragmarx/firewall"
 watch_folders:
   - src
   - tests

@@ -5,5 +5,7 @@
  * yaml config files are.
  */
 return [
-    'path' => env('APP_CONFIG_PATH', __DIR__)
+    'path' => env('APP_CONFIG_PATH', __DIR__),
+
+    'user_home' => env('HOME', __DIR__),
 ];

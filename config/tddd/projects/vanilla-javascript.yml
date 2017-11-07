@@ -1,5 +1,5 @@
 name: "Vanilla Javascript (Jest)"
-path: "/Users/antoniocarlos/code/pragmarx/tddd"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd"
 watch_folders:
   - examples/javascript
 exclude:

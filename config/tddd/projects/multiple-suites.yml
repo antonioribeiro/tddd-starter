@@ -1,5 +1,5 @@
 name: "Multiple suites"
-path: "/Users/antoniocarlos/code/pragmarx/tddd"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd"
 watch_folders:
   - app
 exclude:

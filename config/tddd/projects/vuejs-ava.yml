@@ -1,5 +1,5 @@
 name: "VueJS (AVA)"
-path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/vue-ava"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/examples/vue-ava"
 watch_folders:
   - src
   - test

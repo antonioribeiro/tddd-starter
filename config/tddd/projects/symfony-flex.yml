@@ -1,5 +1,5 @@
 name: "Symfony (4.0-BETA) Flex"
-path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/symfony4/vendor/symfony/flex"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/examples/symfony4/vendor/symfony/flex"
 watch_folders:
   - src
   - tests

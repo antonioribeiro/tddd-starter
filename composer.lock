@@ -1107,16 +1107,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.5.19",
+            "version": "v5.5.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719"
+                "reference": "ce0019d22a83b1b240330ea4115ae27a4d75d79c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/c678100e84934ec85c9f8bc26bd0a60222682719",
-                "reference": "c678100e84934ec85c9f8bc26bd0a60222682719",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/ce0019d22a83b1b240330ea4115ae27a4d75d79c",
+                "reference": "ce0019d22a83b1b240330ea4115ae27a4d75d79c",
                 "shasum": ""
             },
             "require": {
@@ -1198,7 +1198,7 @@
                 "nexmo/client": "Required to use the Nexmo transport (~1.0).",
                 "pda/pheanstalk": "Required to use the beanstalk queue driver (~3.0).",
                 "predis/predis": "Required to use the redis cache and queue drivers (~1.0).",
-                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~2.0).",
+                "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (~3.0).",
                 "symfony/css-selector": "Required to use some of the crawler integration testing tools (~3.3).",
                 "symfony/dom-crawler": "Required to use most of the crawler integration testing tools (~3.3).",
                 "symfony/psr-http-message-bridge": "Required to psr7 bridging features (~1.0)."
@@ -1234,7 +1234,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2017-10-25T19:10:45+00:00"
+            "time": "2017-11-07T14:24:50+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -1662,12 +1662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/ci.git",
-                "reference": "911f90e3176c2a4546ab8475cb9788ff38b7ff3c"
+                "reference": "b97115e513014e466fd53bf7837d58ee15127bb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/911f90e3176c2a4546ab8475cb9788ff38b7ff3c",
-                "reference": "911f90e3176c2a4546ab8475cb9788ff38b7ff3c",
+                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/b97115e513014e466fd53bf7837d58ee15127bb4",
+                "reference": "b97115e513014e466fd53bf7837d58ee15127bb4",
                 "shasum": ""
             },
             "require": {
@@ -1735,7 +1735,7 @@
                 "testing",
                 "watcher"
             ],
-            "time": "2017-11-06T21:16:32+00:00"
+            "time": "2017-11-07T20:44:29+00:00"
         },
         {
             "name": "pragmarx/firewall",
@@ -1808,16 +1808,16 @@
         },
         {
             "name": "pragmarx/support",
-            "version": "v0.8.5",
+            "version": "v0.8.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/support.git",
-                "reference": "7471be77190a7c2a5c9da93f85e296c386dfe618"
+                "reference": "ff1e1eeaa32da840a2c374a3f3ce077314129c32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/support/zipball/7471be77190a7c2a5c9da93f85e296c386dfe618",
-                "reference": "7471be77190a7c2a5c9da93f85e296c386dfe618",
+                "url": "https://api.github.com/repos/antonioribeiro/support/zipball/ff1e1eeaa32da840a2c374a3f3ce077314129c32",
+                "reference": "ff1e1eeaa32da840a2c374a3f3ce077314129c32",
                 "shasum": ""
             },
             "require": {
@@ -1859,7 +1859,7 @@
                 "laravel",
                 "pragmarx"
             ],
-            "time": "2017-11-03T23:12:24+00:00"
+            "time": "2017-11-07T20:42:53+00:00"
         },
         {
             "name": "psr/container",

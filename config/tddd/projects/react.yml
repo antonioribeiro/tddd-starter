@@ -1,5 +1,5 @@
 name: "React"
-path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/react"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/examples/react"
 watch_folders:
   - src
 exclude: []

@@ -1,5 +1,5 @@
 name: "VueJS (Jest)"
-path: "/Users/antoniocarlos/code/pragmarx/tddd/examples/vue-jest"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/examples/vue-jest"
 watch_folders:
   - src
   - tests
