@@ -1662,12 +1662,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/antonioribeiro/ci.git",
-                "reference": "b97115e513014e466fd53bf7837d58ee15127bb4"
+                "reference": "d79f16753e4b7629e8324932c560d36b0eebc015"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/b97115e513014e466fd53bf7837d58ee15127bb4",
-                "reference": "b97115e513014e466fd53bf7837d58ee15127bb4",
+                "url": "https://api.github.com/repos/antonioribeiro/ci/zipball/d79f16753e4b7629e8324932c560d36b0eebc015",
+                "reference": "d79f16753e4b7629e8324932c560d36b0eebc015",
                 "shasum": ""
             },
             "require": {
@@ -1735,7 +1735,7 @@
                 "testing",
                 "watcher"
             ],
-            "time": "2017-11-07T20:44:29+00:00"
+            "time": "2017-11-07T21:33:42+00:00"
         },
         {
             "name": "pragmarx/firewall",
