@@ -1,10 +1,11 @@
-# Tests Watcher Starter
-
-![Starter](https://raw.githubusercontent.com/antonioribeiro/ci/master/docs/dashboard.png)
+# TDDD Starter
+### A Test Driven Development Dashboard Starter App
+ 
+![Starter](https://raw.githubusercontent.com/antonioribeiro/tddd/master/docs/dashboard.png)
 
 #### A watcher, tester & dashboard for your tests
 
-This is an app starter repository for the [Tests Watcher Package](https://github.com/antonioribeiro/ci)
+This is an app starter repository for the [Tests Watcher Package](https://github.com/antonioribeiro/tddd)
 
 ## Installing
 
