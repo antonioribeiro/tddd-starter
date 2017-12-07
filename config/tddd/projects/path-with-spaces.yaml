@@ -1,0 +1,14 @@
+name: "PHPUnit with spaces"
+path: "{{ config('tddd.root.code.path') }}/pragmarx/tddd/examples/phpunit with spaces"
+watch_folders:
+  - tests
+exclude: []
+depends: []
+tests_path: tests
+suites:
+  unit:
+    tester: phpunit
+    tests_path: ''
+    command_options: ''
+    file_mask: "*Test.php"
+    retries: 0
