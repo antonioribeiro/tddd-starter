@@ -1,9 +1,0 @@
-web:
-  build: docker
-  #image: tddd
-  volumes:
-    - '.:/tddd'
-  ports:
-    - "8087:8087"
-  command: bash startapp.sh
-  #command: /bin/bash -c "envsubst < /etc/nginx/conf.d/mysite.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
