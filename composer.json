@@ -10,7 +10,7 @@
         "laravel/dusk": "^2.0",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "pragmarx/ci": "dev-docker",
+        "pragmarx/tddd": "^0.9",
         "pragmarx/firewall": "~2.0"
     },
     "require-dev": {
