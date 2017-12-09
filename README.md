@@ -12,8 +12,8 @@ This is an app starter repository for the [TDDD Package](https://github.com/anto
 ```
 git clone https://github.com/antonioribeiro/tddd-starter.git
 cd tddd-starter
+cp .env.example .env
 composer install
-cp .env.example .example
 php artisan key:generate
 ## create your database and configure your .env
 php artisan migrate
